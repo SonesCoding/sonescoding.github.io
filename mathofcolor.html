@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>The Math of Color</title>
+    <meta charset="utf-8">
+
+</head>
+<body>
+    <header> 
+        <h1>The Math of Color</h1>
+    </header>
+    <nav>
+    <a href="whycolormatters.html">Why Color Theory Matters</a> &nbsp; &#9632; &nbsp;
+    <a href="introcolor.html">Intro to Color Theory</a> &nbsp; &#9632; &nbsp;
+    <a href="colorsymbolism.html">Color Symbolism</a> &nbsp; &#9632; &nbsp;
+    <a href="mathofcolor.html">The Math of Colors</a> &nbsp; &#9632; &nbsp;
+    <a href="contactuscolor.html">Contact Us</a> &nbsp; &#9632; &nbsp;
+</nav>
+
+<main>
+    <h2>Trichromatic Theory</h2>
+    <p>The human retina has 3 cones that absorb color. The trichromatic theory in it's simplest form views color space as three dimensional.</p>
+    <p>It is believed that colors on the color wheel can be measured by how much of each cone in our eye converts light into color. Colors can be measured
+        by their red, green, and blue values. (RGB)
+    </p>
+    <p>For this calcualtion to be represented on a visual key, for right now you might have to look up and research the values of each color's RGB. 
+        The following calculation finds the complimentary color based on your input color.   
+    </p>
+</main>
+<label id="label"> Enter your color!</label><br>
+<p>Each value must be between 0-255 to be a valid color according to trichromatic theory</p><br>
+<form>  
+    <label for="r"> Red :</label>
+    <input type="number" id="r" name="r" min="0" max="255">
+    <label for="b"> Blue :</label>
+    <input type="number" id="b" name="b" min="0" max="255">
+    <label for="g"> Green :</label>
+    <input type="number" id="g" name="g" min="0" max="255">
+    
+<input type="submit"  id = "submit" value="Submit">
+</form> 
+
+<script src="mathofcolor.js" ></script>  
+<br>
+<p id = "result" ></p>  
+
+<footer>
+    <a href="index.html">Return to SonesCoding Homepage</a>
+  </footer> 
+
+</body>
+</html>
