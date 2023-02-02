@@ -13,12 +13,15 @@
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let phone = document.getElementById("phone").value;
+
+
         let test = name&&email&&phone ? true : false;
-        if(test){
-              window.alert("Thank you!");
-        }
-        else{
-              window.alert("Please fill in all fields");
-        }
+
+          if(test){
+                window.alert("Thank you!");
+          }
+          else{
+                window.alert("Please fill in all fields");
+          }
   }
   document.getElementById("submit").addEventListener("click", verifyForm);
