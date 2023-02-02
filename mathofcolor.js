@@ -1,7 +1,8 @@
 
     
     
-    function Complimentary (){
+    function Complimentary (r, b, g){
+        console.log
     let r;
     let b;
     let g;
@@ -20,8 +21,5 @@
 
         result = ("The complimentary color of " + r +", " + b + ", " +
 g + " is " + cr + ", " + cb + ", " + cg) 
-
-document.getElementById("result").innerHTML = result;
-
 }
 document.getElementById("submit").addEventListener("click", Complimentary);
