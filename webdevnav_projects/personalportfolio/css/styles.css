@@ -1,0 +1,133 @@
+/* 	
+	Student Name: Lillian Sones
+	File Name: styles.css
+    Date: 02/10/2023
+*/
+
+/*CSS RESET*/
+
+html, body, header, div, h1, h2, h3, h4, main, a, ul, li, footer, nav{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   display: block;
+}
+
+body{
+    max-width: 900;
+    font-size: large;
+    background-color: #447043;
+    color: #3d2f21;
+    font-family: "Courier", sans-serif;
+    display:block;
+}
+
+header{
+    background: #302b29;
+   width: 100%;
+   color: #e4bead;
+   font-size: 30px;
+   text-align: center;
+   line-height: 1.5em;
+   font-weight: bold;
+}
+#portrait{
+    width: 25%;
+    float: right;
+    border: 3px solid #e4bead; 
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+nav ul {
+  list-style-type: none;
+  font-family:'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #85af85;
+  border: 3px dotted #3d2f21;
+  height: 100%; 
+  position: fixed; 
+  overflow: auto; 
+}
+
+nav a{
+    color:#447043;
+    font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: rgb(102, 102, 102);
+  width: fit-content;
+  height:fit-content;
+  color: white;
+}
+
+nav li a{
+    display: block;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+
+p{ 
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#funfacts ul{
+    background-color: #e2b88d;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#funfacts li{
+    list-style-type: circle;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#contact{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contact a{
+        display: block;
+        text-align:center;
+        font-family:'Courier New', Courier, monospace;
+        color: #e2b88d;
+        text-decoration: none;
+        font-size: 1.2em;
+        
+}
+
+footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #193318;
+  color: #795e43;
+  text-align: center;
+}
+
+footer a{
+    color: #e2b88d;
+    text-decoration: none;
+}
