@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>All About Color Theory</title>
+    <title></title>
     <meta charset="utf-8">
+    <script src="aestheticboard.js" defer></script>
 
 </head>
 <body>
     <header> 
-        <h1>All About Color Theory</h1>
+        <h1></h1>
     </header>
     <nav>
         <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/whycolormatters.html">Why Color Theory Matters</a> &nbsp; &#9632; &nbsp;
@@ -17,14 +18,46 @@
         <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/aestheticboard.html">Aesthetic Board</a> &nbsp; &#9632; &nbsp;
         <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/contactuscolor.html">Contact Us</a> &nbsp; &#9632; &nbsp;
     </nav>
-
+<body>
 <main>
-    <p>Hello! This page is all about Color Theory!</p>
-    <p>Color theory is a major key to color mixing, visual effects, and cohesive artistry.</p>
-    <p>Explore this page to learn more...</p>
-    <p><small>... perhaps you will see where color theory affects your day to day.</small></p>
+    <h2>Your Aesthetic Board!</h2>
+    <p>Currently, this page is in the works. The conditional statement in the code includes displaying a
+        picture moodboard of the selected color. Right now, the matching text content is the only part of the conditional
+        content that is displaying. I will be trying to fix this issue shortly.
+    </p>
+
+<!-- temporary style for padding, will make css for entire site one day. -->
+<style>
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+}
+</style>
+<form>
+    <label for="color">Choose a Color:</label>
+<select id="colors" name="colors-select" onchange="background()">
+    <option value="">--Please choose an option--</option>
+  <option value="red">Red</option>
+  <option value="orange">Orange</option>
+  <option value="yellow">Yellow</option>
+  <option value="green">Green</option>
+  <option value="blue">Blue</option>
+  <option value="purple">Purple</option>
+  <option value="black">Black</option>
+  <option value="gray">Gray</option>
+  <option value="white">White</option>
+</select>
+</form>
+<br>
+    <div id="text"></div>
+    <div id="board"></div>
 </main>
-    
+    <body>
 
 <footer>
     <a href="https://sonescoding.github.io/index.html">Return to SonesCoding Homepage</a>
