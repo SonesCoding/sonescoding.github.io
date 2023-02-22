@@ -55,13 +55,27 @@ background:#302b29;
 }
 
 .leftnav a{
-  list-style-type: none;
-  font-family:'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 14px 16px;
-  width: 15%;
-  border: 4px dotted #3d2f21;
-  height: 100%;  
+	font-family:'Courier New', Courier, monospace;
+	text-decoration: none;
+	font-size: 17px;
+	color:#447043;
+	font-weight: bold;
+}
+
+.leftnav li a{
+  	list-style-type: none;
+	padding: 14px 16px;
+	display: block;
+  	width: 15%;
+  	border: 4px dotted #3d2f21;
+  	height: 100%;
+	background-color: #302b29;
+	text-align:center;
+    
+}
+
+.leftnav a:hover {
+  background-color: #e4bead;
 }
 
 .leftnav a.icon {
@@ -75,24 +89,6 @@ background:#302b29;
 .active {
   background-color: #04AA6D;
   color: white;
-}
-
-nav a{
-    color:#447043;
-    font-weight: bold;
-}
-
-nav li a:hover {
-  background-color: #e4bead;
-  width: fit-content;
-  height:fit-content;
-}
-
-nav li a{
-    text-align:center;
-    text-decoration: none;
-    font-size: 30%
-    
 }
 
 p{ 
