@@ -48,8 +48,9 @@ img{
 }
 
 .leftnav{
+    overflow: hidden;
     position: relative;
-    margin: 0;
+    background-color:#948782;
 }
 
 .leftnav #navlinks{
