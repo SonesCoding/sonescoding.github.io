@@ -35,7 +35,7 @@ header{
 #portrait{
     width: 25%;
     float: right;
-    border: 3px solid #e4bead; 
+    border: 6px solid ; 
 }
 
 img{
@@ -58,8 +58,7 @@ background:#302b29;
 	font-family:'Courier New', Courier, monospace;
 	text-decoration: none;
 	font-size: 17px;
-	color:#447043;
-	font-weight: bold;
+	color: #e4bead;
 }
 
 .leftnav li a{
@@ -67,7 +66,7 @@ background:#302b29;
 	padding: 14px 16px;
 	display: block;
   	width: 15%;
-  	border: 4px dotted #3d2f21;
+  	border: 4px dotted #a7f5a6;
   	height: 100%;
 	background-color: #302b29;
 	text-align:center;
@@ -75,11 +74,11 @@ background:#302b29;
 }
 
 .leftnav a:hover {
-  background-color: #e4bead;
+  background-color: #a7f5a6;
 }
 
 .leftnav a.icon {
-  background: black;
+  background: rgb(5, 5, 5);
   display: block;
   position: absolute;
   right: 0;
@@ -87,8 +86,8 @@ background:#302b29;
 }
 
 .active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #085519;
+  color: rgb(218, 250, 220);
 }
 
 p{ 
