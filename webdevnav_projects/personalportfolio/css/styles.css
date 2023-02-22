@@ -50,6 +50,10 @@ img{
 }
 
 .leftnav #navlinks{
+	display: hidden;
+}
+
+.leftnav a{
   list-style-type: none;
   font-family:'Courier New', Courier, monospace;
   margin: 0;
@@ -57,9 +61,20 @@ img{
   width: 15%;
   background-color: #85af85;
   border: 4px dotted #3d2f21;
-  height: 100%; 
-  position: fixed; 
-  overflow: auto; 
+  height: 100%;  
+}
+
+.leftnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 nav a{
@@ -75,10 +90,7 @@ nav li a:hover {
 }
 
 nav li a{
-    display: block;
     text-align:center;
-    font-family:'Courier New', Courier, monospace;
-    padding: 10px 10px;
     text-decoration: none;
     font-size: 1.2em;
     
