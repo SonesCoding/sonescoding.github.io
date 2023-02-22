@@ -27,7 +27,7 @@ body{
 
 header{
     background: #302b29;
-    position: absolute;
+    position: static;
    width: 100%;
    color: #e4bead;
    font-size: x-large;
@@ -48,16 +48,16 @@ img{
 }
 
 .leftnav{
-    overflow: hidden;
     position: relative;
-    background-color:#948782;
+    margin: 0;
+    overflow: hidden;
 }
 
 .leftnav #navlinks{
     display: none;
 }
 
-.leftnav a{
+.leftnav li a{
     color: #3d2f21;
     background-color: #947657;
     border: #447043 dotted thick;
@@ -65,11 +65,10 @@ img{
     text-decoration: none;
     font-size: medium;
     font-family:'Courier New', Courier, monospace;
-    padding: 14px 16px;
     list-style-type: none;
 }
 
-.leftnav nav a:hover {
+.leftnav nav li a:hover {
   background-color: #1c411c;
   color: #e4bead;
 }
