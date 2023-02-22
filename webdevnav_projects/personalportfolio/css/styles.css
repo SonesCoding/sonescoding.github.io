@@ -43,14 +43,20 @@ img{
     max-width: 100%;
     height: auto;
 }
-nav ul {
+
+.leftnav{
+    overflow:hidden;
+    position: relative;
+}
+
+.leftnav #navlinks{
   list-style-type: none;
   font-family:'Courier New', Courier, monospace;
   margin: 0;
-  padding: 0;
+  padding: 14px 16px;
   width: 15%;
   background-color: #85af85;
-  border: 3px dotted #3d2f21;
+  border: 4px dotted #3d2f21;
   height: 100%; 
   position: fixed; 
   overflow: auto; 
