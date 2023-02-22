@@ -6,10 +6,12 @@
 -->
 <html lang="en">
 <head>
-	<title>Contact</title>
+	<title></title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+	<script src="js/js.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -21,14 +23,23 @@ This is the homepage, an intro to my personal portfolio. It will contain my resu
             <h2 style="text-align: center">Contact me!</h2>
         </header>
 
-		<nav>
-            <ul>
-			<li><a href="https://sonescoding.github.io/webdevnav_projects/personalportfolio/portfolioindex.html">Home</a></li>
-			<li><a href="https://sonescoding.github.io/webdevnav_projects/personalportfolio/funfacts.html">Fun Facts!</a></li>
-			<li><a href="https://sonescoding.github.io/webdevnav_projects/personalportfolio/contact.html">Contact Me!</a></li>
-        </ul>
+	
+		<div class="leftnav">
+			  <a href="#home" class="active">Logo</a>
+			  <div id="navlinks">
+				<nav>
+					<ul>
+					<li><a href="https://sonescoding.github.io/webdevnav_projects/personalportfolio/portfolioindex.html">Home</a></li>
+					<li><a href="https://sonescoding.github.io/webdevnav_projects/personalportfolio/funfacts.html">Fun Facts!</a></li>
+					<li><a href="https://sonescoding.github.io/webdevnav_projects/personalportfolio/contact.html">Contact Me!</a></li>
+				</ul>
+			</div>
+			  <a href="webdevnav_projects/personalportfolio/js/js" class="icon" onclick="navbars()">
+				<i class="fa fa-bars"></i>
+			  </a>
 
-		</nav>
+				</nav>
+		</div>
 	
     <main>
         <div id="contact">

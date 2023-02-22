@@ -80,6 +80,50 @@ nav li a{
     display: block;
     text-align:center;
     padding: 10% 10%;   
+
+    overflow: hidden;
+    position: relative;
+    background:#302b29;
+}
+
+.topnav #navlinks {
+  display: none;
+}
+
+.leftnav a{
+	font-family:'Courier New', Courier, monospace;
+	text-decoration: none;
+	font-size: 17px;
+	color:#447043;
+	font-weight: bold;
+}
+
+.leftnav li a{
+  	list-style-type: none;
+	padding: 14px 16px;
+	display: block;
+  	width: 15%;
+  	border: 4px dotted #3d2f21;
+  	height: 100%;
+	background-color: #302b29;
+	text-align:center;
+}
+
+.leftnav a:hover {
+  background-color: #e4bead;
+}
+
+.leftnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 p{ 
