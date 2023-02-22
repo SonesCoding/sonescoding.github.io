@@ -45,10 +45,14 @@ img{
 }
 
 .leftnav{
-    position: relative;
+overflow: hidden;
+position: relative;
 background:#302b29;
 }
 
+.topnav #navlinks {
+  display: none;
+}
 
 .leftnav a{
   list-style-type: none;
