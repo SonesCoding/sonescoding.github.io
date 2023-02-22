@@ -18,7 +18,7 @@ html, body, header, div, h1, h2, h3, h4, main, a, ul, li, footer, nav{
 body{
     max-width: 900;
     font-size: medium;
-    background-color: #447043;
+    background-color: #507250;
     color: #3d2f21;
     font-family: "Courier", sans-serif;
     display:block;
@@ -27,6 +27,7 @@ body{
 
 header{
     background: #302b29;
+    position: absolute;
    width: 100%;
    color: #e4bead;
    font-size: x-large;
@@ -49,26 +50,19 @@ img{
 .leftnav{
     overflow:hidden;
     position: relative;
-    width: 10%;
-  background-color: #85af85;
-  border: 4px dotted #3d2f21;
-  height: 100%; 
-  position: fixed;
+    margin: 0;
+    padding: 14px 16px;
 }
 
-.leftnav #navlinks{
-  list-style-type: none;
-  font-family:'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 14px 16px;
-}
-
-.leftnav a{
-    color:#3d2f21;
+.leftnav li a{
+    color: #3d2f21;
+    background-color: #947657;
+    border: #447043 dotted thick;
     font-weight: bold;
     text-decoration: none;
     font-size: medium;
     font-family:'Courier New', Courier, monospace;
+    list-style-type: none;
 }
 
 .leftnav nav li a:hover {
@@ -76,94 +70,47 @@ img{
   color: #e4bead;
 }
 
-nav li a{
+.leftnav nav{
     display: block;
-    text-align:center;
-    padding: 10% 10%;   
-
-    overflow: hidden;
-    position: relative;
+    text-align:center;  
     background:#302b29;
+    width: 30%;    
 }
 
-.topnav #navlinks {
-  display: none;
-}
-
-.leftnav a{
-	font-family:'Courier New', Courier, monospace;
-	text-decoration: none;
-	font-size: 17px;
-	color:#447043;
-	font-weight: bold;
-}
-
-.leftnav li a{
-  	list-style-type: none;
-	padding: 14px 16px;
-	display: block;
-  	width: 15%;
-  	border: 4px dotted #3d2f21;
-  	height: 100%;
-	background-color: #302b29;
-	text-align:center;
-}
-
-.leftnav a:hover {
-  background-color: #e4bead;
-}
 
 .leftnav a.icon {
-  background: black;
+  background: #302b29;
   display: block;
   position: absolute;
-  right: 0;
-  top: 0;
+left: 0;
+top: 0;
 }
 
 .active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-p{ 
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 20%;
-    margin-right: 20%;
+    background-color: #1c411c;
+    color: #e4bead;
 }
 
 #funfacts ul{
-    background-color: #e2b88d;
+    background-color: #e2b88d ;
     display: block;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 20%;
     margin-right: 20%;
-    list-style-type: circle;
     position: relative;
 
 }
 
 #intro {
-    position: fixed;
-    background-color: #e2b88d;
+    background-color: #e2b88d ;
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 20%;
     margin-right: 20%;
-    height: 100%;
+    position: relative;
 }
-
-#funfacts li{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    
-}
-
-
 
 #contact{
     margin-top: auto;
@@ -185,6 +132,16 @@ p{
     position: relative;
     background-color: #e2b88d;
     display: block;
+}
+
+#contact p{
+    background-color: #e2b88d;
+    display: block;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 footer{
