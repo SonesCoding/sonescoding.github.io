@@ -45,7 +45,6 @@ img{
 }
 
 .leftnav{
-    overflow:hidden;
     position: relative;
 background:#302b29;
 }
@@ -88,7 +87,7 @@ nav li a:hover {
 nav li a{
     text-align:center;
     text-decoration: none;
-    font-size: 10%
+    font-size: 30%
     
 }
 
