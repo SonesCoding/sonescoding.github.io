@@ -36,7 +36,7 @@ header{
    font-weight: bold;
 }
 #portrait{
-    width: 40%;
+    width: 20%;
     float: right;
     border:thick solid #e4bead; 
 }
@@ -48,13 +48,15 @@ img{
 }
 
 .leftnav{
-    overflow:hidden;
     position: relative;
     margin: 0;
-    padding: 14px 16px;
 }
 
-.leftnav li a{
+.leftnav #navlinks{
+    display: none;
+}
+
+.leftnav a{
     color: #3d2f21;
     background-color: #947657;
     border: #447043 dotted thick;
@@ -62,21 +64,14 @@ img{
     text-decoration: none;
     font-size: medium;
     font-family:'Courier New', Courier, monospace;
+    padding: 14px 16px;
     list-style-type: none;
 }
 
-.leftnav nav li a:hover {
+.leftnav nav a:hover {
   background-color: #1c411c;
   color: #e4bead;
 }
-
-.leftnav nav{
-    display: block;
-    text-align:center;  
-    background:#302b29;
-    width: 30%;    
-}
-
 
 .leftnav a.icon {
   background: #302b29;
