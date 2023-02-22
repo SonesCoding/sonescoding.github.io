@@ -12,30 +12,32 @@ html, body, header, div, h1, h2, h3, h4, main, a, ul, li, footer, nav{
    border: 0;
    font-size: 100%;
    display: block;
+
 }
 
 body{
     max-width: 900;
-    font-size: large;
+    font-size: medium;
     background-color: #447043;
     color: #3d2f21;
     font-family: "Courier", sans-serif;
     display:block;
+    overflow: auto;
 }
 
 header{
     background: #302b29;
    width: 100%;
    color: #e4bead;
-   font-size: 30px;
+   font-size: x-large;
    text-align: center;
    line-height: 1.5em;
    font-weight: bold;
 }
 #portrait{
-    width: 25%;
+    width: 40%;
     float: right;
-    border: 3px solid #e4bead; 
+    border:thick solid #e4bead; 
 }
 
 img{
@@ -47,6 +49,11 @@ img{
 .leftnav{
     overflow:hidden;
     position: relative;
+    width: 10%;
+  background-color: #85af85;
+  border: 4px dotted #3d2f21;
+  height: 100%; 
+  position: fixed;
 }
 
 .leftnav #navlinks{
@@ -54,34 +61,25 @@ img{
   font-family:'Courier New', Courier, monospace;
   margin: 0;
   padding: 14px 16px;
-  width: 15%;
-  background-color: #85af85;
-  border: 4px dotted #3d2f21;
-  height: 100%; 
-  position: fixed; 
-  overflow: auto; 
 }
 
-nav a{
-    color:#447043;
+.leftnav a{
+    color:#3d2f21;
     font-weight: bold;
+    text-decoration: none;
+    font-size: medium;
+    font-family:'Courier New', Courier, monospace;
 }
 
-nav li a:hover {
-  background-color: rgb(102, 102, 102);
-  width: fit-content;
-  height:fit-content;
-  color: white;
+.leftnav nav li a:hover {
+  background-color: #1c411c;
+  color: #e4bead;
 }
 
 nav li a{
     display: block;
     text-align:center;
-    font-family:'Courier New', Courier, monospace;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 1.2em;
-    
+    padding: 10% 10%;   
 }
 
 p{ 
@@ -99,12 +97,29 @@ p{
     margin-bottom: auto;
     margin-left: 20%;
     margin-right: 20%;
-}
-#funfacts li{
     list-style-type: circle;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    position: relative;
+
 }
+
+#intro {
+    position: fixed;
+    background-color: #e2b88d;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+}
+
+#funfacts li{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+
 
 #contact{
     margin-top: auto;
@@ -118,19 +133,26 @@ p{
         text-align:center;
         font-family:'Courier New', Courier, monospace;
         color: #e2b88d;
-        text-decoration: none;
-        font-size: 1.2em;
-        
+        text-decoration: underline;
+        font-size: medium;    
+}
+
+#contact h2{
+    position: relative;
+    background-color: #e2b88d;
+    display: block;
 }
 
 footer{
-    position: fixed;
+position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #193318;
   color: #795e43;
   text-align: center;
+
+  font-size: small;
 }
 
 footer a{
