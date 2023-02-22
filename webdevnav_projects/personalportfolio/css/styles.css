@@ -47,11 +47,9 @@ img{
 .leftnav{
     overflow:hidden;
     position: relative;
+background:#302b29;
 }
 
-.leftnav #navlinks{
-	display: hidden;
-}
 
 .leftnav a{
   list-style-type: none;
@@ -59,7 +57,6 @@ img{
   margin: 0;
   padding: 14px 16px;
   width: 15%;
-  background-color: #85af85;
   border: 4px dotted #3d2f21;
   height: 100%;  
 }
@@ -83,16 +80,15 @@ nav a{
 }
 
 nav li a:hover {
-  background-color: rgb(102, 102, 102);
+  background-color: #e4bead;
   width: fit-content;
   height:fit-content;
-  color: white;
 }
 
 nav li a{
     text-align:center;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 10%
     
 }
 
