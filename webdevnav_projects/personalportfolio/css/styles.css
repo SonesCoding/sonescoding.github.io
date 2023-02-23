@@ -59,7 +59,8 @@ nav li a{
 nav li:hover{
     background-color: #947657;
     color: #302b29;
-    border:#c7bcb9
+    border:#c7bcb9;
+    border-radius: 40%;
 }
 
 
@@ -85,6 +86,10 @@ nav li:hover{
     nav li a{
         padding: .5rem 1rem;
     }
+
+    #portrait{
+        max-width: 5%;
+    }
     }
 
 
@@ -107,7 +112,6 @@ main{
 
 #portrait{
     width: 10%;
-    border:thick solid #e4bead; 
     position: relative;
 }
 
@@ -127,7 +131,7 @@ img{
 
 }
 
-#contact a{
+.contact a{
         display: block;
         text-align:center;
         font-family:'Courier New', Courier, monospace;
@@ -136,7 +140,7 @@ img{
         font-size: medium;    
 }
 
-#contact h2{
+.contact h2{
     position: relative;
     display: block;
 }
