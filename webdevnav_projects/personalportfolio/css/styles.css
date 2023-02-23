@@ -65,7 +65,7 @@ nav li:hover{
 
 
 
-@media(max-width:400px){
+@media(max-width:300px){
     nav{
         display:flex;
         width: 70%
@@ -88,7 +88,7 @@ nav li:hover{
     }
 
     #portrait{
-        max-width: 5%;
+        max-width: 6%;
     }
     }
 
@@ -97,9 +97,11 @@ nav li:hover{
 main{
     overflow: auto;
     background-color: #302b29;
+    font-family: 'Labrada', serif;
     color: #c7bcb9;
     display: block;
     text-align: center;
+    align-content: center;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -111,7 +113,8 @@ main{
 }
 
 #portrait{
-    width: 10%;
+    width: 25%;
+    align-self: center;
     position: relative;
 }
 
