@@ -88,7 +88,7 @@ nav li:hover{
     }
 
     #portrait{
-        max-width: 6%;
+        max-width: 35%;
     }
     }
 
@@ -113,7 +113,7 @@ main{
 }
 
 #portrait{
-    width: 25%;
+    max-width: 40%;
     align-self: center;
     position: relative;
 }
