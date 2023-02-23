@@ -113,12 +113,16 @@ main{
 }
 
 #portrait{
-    max-width: 40%;
+    max-width: 60%;
     align-self: center;
     position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 img{
+    margin: 0;
+    padding: 0;
     display: block;
     max-width: 100%;
     height: auto;
