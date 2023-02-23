@@ -1,3 +1,4 @@
+
 /* 	
 	Student Name: Lillian Sones
 	File Name: styles.css
@@ -9,36 +10,6 @@
 html, body, header, div, h1, h2, h3, h4, main, a, ul, li, footer, nav{
    margin: 0;
    padding: 0;
-   border: 0;
-   font-size: 100%;
-   display: block;
-
-}
-
-body{
-    max-width: 900;
-    font-size: medium;
-    background-color: #507250;
-    color: #3d2f21;
-    font-family: "Courier", sans-serif;
-    display:block;
-    overflow: auto;
-}
-
-header{
-    background: #302b29;
-    position: static;
-   width: 100%;
-   color: #e4bead;
-   font-size: x-large;
-   text-align: center;
-   line-height: 1.5em;
-   font-weight: bold;
-}
-#portrait{
-    width: 20%;
-    float: right;
-    border:thick solid #e4bead; 
 }
 
 img{
@@ -47,71 +18,135 @@ img{
     height: auto;
 }
 
-.leftnav{
-    position: relative;
+
+body{
+    background-color: #507250;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#302b29;
+}
+
+.navlinks ul{
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+    display: flex;
 }
 
-.leftnav #navlinks{
-    display: none;
+.navlinks li{
+    list-style: none;
 }
 
-.leftnav li a{
-    color: #3d2f21;
-    background-color: #947657;
-    border: #447043 dotted thick;
-    font-weight: bold;
+.navlinks li a{
     text-decoration: none;
-    font-size: medium;
-    font-family:'Courier New', Courier, monospace;
-    list-style-type: none;
-}
-
-.leftnav nav li a:hover {
-  background-color: #1c411c;
-  color: #e4bead;
-}
-
-.leftnav a.icon {
-  background: #302b29;
-  display: block;
-  position: absolute;
-left: 0;
-top: 0;
-}
-
-.active {
-    background-color: #1c411c;
-    color: #e4bead;
-}
-
-#funfacts ul{
-    background-color: #e2b88d ;
+    color: #c7bcb9;
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 20%;
-    margin-right: 20%;
-    position: relative;
-
+    padding: 1rem;
 }
 
-#intro {
-    background-color: #e2b88d ;
+.navlinks li:hover{
+    background-color: #947657;
+    color: #302b29;
+    border:#c7bcb9
+}
+
+
+
+.toggle-button{
+    position:absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: none;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height:3px;
+    width: 100%;
+    background-color: #c7bcb9;
+    border-radius: 10px;
+}
+
+@media(max-width:400px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navlinks{
+        display:none;
+        width: 100%
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlinks ul{
+        width: 100%;
+        flex-direction: column;}
+
+    .navlinks li{
+        text-align: center;}
+
+    .navlinks li a{
+        padding: .5rem 1rem;
+    }
+
+    .navlinks.active{
+        display:flex;
+    }
+    }
+
+
+
+main{
+    overflow: auto;
+    background-color: #302b29;
+    color: #c7bcb9;
     display: block;
+    text-align: center;
+
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 20%;
     margin-right: 20%;
     position: relative;
+
 }
 
-#contact{
+main p{
+    font-size: medium;
+    color: #3d2f21;
+    background-color: #e2b88d;
+    font-family: "Courier", sans-serif;
+}
+
+#portrait{
+    width: 20%;
+    border:thick solid #e4bead; 
+}
+
+img{
+    display: block;
+    max-width: 70%;
+    height: auto;
+}
+
+#funfacts ul{
+    display: block;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 20%;
     margin-right: 20%;
+    position: relative;
+
 }
 
 #contact a{
@@ -125,24 +160,13 @@ top: 0;
 
 #contact h2{
     position: relative;
-    background-color: #e2b88d;
     display: block;
-}
-
-#contact p{
-    background-color: #e2b88d;
-    display: block;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 footer{
-position: absolute;
+position: fixed;
   left: 0;
-  bottom: 0;
+bottom : 0;
   width: 100%;
   background-color: #193318;
   color: #795e43;
