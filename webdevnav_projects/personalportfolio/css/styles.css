@@ -30,24 +30,33 @@ body{
     background-color:#302b29;
 }
 
-.navlinks ul{
+nav h1{
+    color:#c7bcb9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+nav ul{
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
 }
 
-.navlinks li{
+nav li{
+    font-family: 'Courier New', Courier, monospace;
     list-style: none;
 }
 
-.navlinks li a{
+nav li a{
     text-decoration: none;
     color: #c7bcb9;
     display: block;
     padding: 1rem;
 }
 
-.navlinks li:hover{
+nav li:hover{
     background-color: #947657;
     color: #302b29;
     border:#c7bcb9
@@ -55,32 +64,10 @@ body{
 
 
 
-.toggle-button{
-    position:absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: none;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar{
-    height:3px;
-    width: 100%;
-    background-color: #c7bcb9;
-    border-radius: 10px;
-}
-
 @media(max-width:400px){
-    .toggle-button{
-        display: flex;
-    }
-
-    .navlinks{
-        display:none;
-        width: 100%
+    nav{
+        display:flex;
+        width: 70%
     }
 
     .navbar{
@@ -88,19 +75,15 @@ body{
         align-items: flex-start;
     }
 
-    .navlinks ul{
+    nav ul{
         width: 100%;
         flex-direction: column;}
 
-    .navlinks li{
+    nav li{
         text-align: center;}
 
-    .navlinks li a{
+    nav li a{
         padding: .5rem 1rem;
-    }
-
-    .navlinks.active{
-        display:flex;
     }
     }
 
@@ -115,27 +98,22 @@ main{
 
     margin-top: 0;
     margin-bottom: 0;
+    height: 100%;
     margin-left: 20%;
     margin-right: 20%;
-    position: relative;
+    position: static;
 
-}
-
-main p{
-    font-size: medium;
-    color: #3d2f21;
-    background-color: #e2b88d;
-    font-family: "Courier", sans-serif;
 }
 
 #portrait{
-    width: 20%;
+    width: 10%;
     border:thick solid #e4bead; 
+    position: relative;
 }
 
 img{
     display: block;
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
 }
 
