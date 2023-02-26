@@ -28,8 +28,10 @@
         The following calculation finds the complimentary color based on your input color.   
     </p>
 </main>
+
 <label id="label"> Enter your color!</label><br>
 <p>Each value must be between 0-255 to be a valid color according to trichromatic theory</p><br>
+
 <form>  
     <label for="r"> Red :</label>
     <input type="number" id="r" name="r" min="0" max="255">
@@ -41,11 +43,17 @@
 <input type="submit"  id = "submit" value="Submit">
 </form> 
 
+<div id="warningBox"></div>
+
+
 <br>
 <p id = "result" ></p>  
 
 <footer>
     <a href="https://sonescoding.github.io/index.html">Return to SonesCoding Homepage</a>
+    <p>This link will lead you to a brief explanation on how I used 
+        exceptions for this page.
+        <a href="https://sonescoding.github.io/clientsidenav_projects/color_theory_website/exceptionSummary.html">Exception Summary</a></p>
   </footer> 
 
 </body>
