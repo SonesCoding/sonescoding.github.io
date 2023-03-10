@@ -10,3 +10,14 @@
       Filename: project05-02.js
 */
 
+const images = 
+document.getElementsByTagName("img");
+
+const photoBucket =
+document.getElementById("photo_bucket");
+
+const photoList =
+document.getElementById("photo_list");
+
+
+
