@@ -10,21 +10,23 @@
       Filename: project05-02.js
 */
 
-const images = 
-document.getElementsByTagName("img");
+let images = 
+document.querySelectorAll("img");
 
-const photoBucket =
+let photoBucket =
 document.getElementById("photo_bucket");
 
-const photoList =
+let photoList =
 document.getElementById("photo_list");
 
 let newItem;
 let oldItem;
 
 for(let i = 0; i < images.length; i++){
-            images[i].onclick = function(){
-      if(this.parentElement.id === "photo_bucket"){
+            images[i].onclick = function()
+{
+      if(this.parentElement.id === "photo_bucket")
+      {
             newItem = document.createElement("li");
             photoList.appendChile(newItem);
             newItem.appendChild(this);
