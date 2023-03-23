@@ -22,8 +22,10 @@ document.getElementById("photo_list");
 let newItem;
 let oldItem;
 
-for(let i = 0; i < images.length; i++){
-            images[i].onclick = function()
+for(let i = 0; i < images.length; i++)
+{
+
+images[i].onclick = function()
 {
       if(this.parentElement.id === "photo_bucket")
       {
