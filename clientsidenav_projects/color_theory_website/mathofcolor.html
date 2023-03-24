@@ -32,10 +32,10 @@
 <label id="label"> Enter your color!</label><br>
 <p>Each value must be between 0-255 to be a valid color according to trichromatic theory</p><br>
 
-<form>  
+<form id="form" >  
 
     <label for="NickN">Nickname:</label><br>
-    <input type="text" id="NickN" name="NickN"><br>
+    <input type="text" name="NickN"><br>
 
     <br>
    
@@ -47,6 +47,7 @@
             </select>
 
     <br>
+
     <label for="r"> Red :</label>
     <input type="number" id="r" name="r" min="0" max="255">
     <label for="b"> Blue :</label>
@@ -56,14 +57,18 @@
     
 
 
-<button type="submit"  id = "btn" value="Submit">
+    <input type="button"
+           onclick="message()"
+           value="Submit">
 </form> 
+
 
 <div id="warningBox"></div>
 
 <br>
-<p id="result"></p>
+<div id="result"></div>
 <br> 
+
 
 <footer>
     <a href="https://sonescoding.github.io/index.html">Return to SonesCoding Homepage</a>

@@ -1,61 +1,52 @@
+const MIN = 2;
+const MAX = 15;
 
-        const MIN = 2;
-        const MAX = 15;
+      warningBox = document.getElementById("warningBox");
+      result = document.getElementById("result");
 
-        warningBox = document.getElementById("warningBox");
-        warningBox.innerHTML = "";
-    
-        document.getElementById("submit").addEventListener("click", Complimentary);
+      document.getElementById("submit").addEventListener("click", message);
 
-    function Complimentary (){
-    let r;
-    let b;
-    let g;
+      function message(){
 
-    let cr;
-    let cb;
-    let cg;
-    
-    r = document.getElementById("r").value; 
-    b = document.getElementById("b").value; 
-    g = document.getElementById("g").value;
-    nickname = document.getElementById("NickN").value;
+         warningBox.innerHTML = "";
+         result.innerHTML = "";
 
-   const btn = document.querySelector('#btn');
-   const sb = document.querySelector('#color')
+         let nickname = document.getElementById("NickN").value;
 
-    try{
+         let selectElement = document.querySelector('#select1');
 
-        if(r == "") throw "Must be a number between 0-255.";
-        if(b =="") throw "Must be a number between 0-255.";
-        if(g =="") throw "Must be a number between 0-255.";
-
-        if(nickname == "") throw "Must Enter a Nickname for the Simulator. 2-15 Characters.";
-
-        if(nickname < MIN || nickname > MAX) throw "Must Enter a Nickname for the Simulator. 2-15 Characters.";
+         let r = document.getElementById("r").value; 
+         let b = document.getElementById("b").value; 
+         let g = document.getElementById("g").value;
+   
+         let cr = 255 - r;
+         let cb = 255 - b;
+         let cg = 255 - g;
 
 
 
-        cr = 255 - r;
-        cb = 255 - b;
-        cg = 255 - g;
- 
+         let output = (nickname+ "'s favorite color is " + selectElement.value +"!!\n Your Mixed Color is "+cr+", "+cb+", "+cg+"!");
 
-        btn.onclick = (e) => 
-      {
-         e.preventDefault();
-         const selectedValues = [].filter
-             .call(sb.options, option => option.selected)
-             .map(option => option.text);
 
-         result = (nickname + "'s favorite color is "+ selectedValues + "!!!\nThe complimentary color of " + r +", " + b + ", " + g + " is " + cr + ", " + cb + ", " + cg)
-         window.alert(result);
-     };
+         try{
+            if(r == "") throw "Must be a number between 0-255.";
+              if(b =="") throw "Must be a number between 0-255.";
+              if(g =="") throw "Must be a number between 0-255.";
+      
+              if(nickname == "") throw "Must Enter a Nickname for the Simulator. 2-15 Characters.";
+      
+              if(nickname < MIN || nickname > MAX) throw "Must Enter a Nickname for the Simulator. 2-15 Characters.";
+      
+         }
+      
+           catch(err)
+           {
+              warningBox.innerHTML=" " + err;
+              
+           }
 
-     }
-     catch(err){
-        warningBox.innerHTML=" " + err;
-        
-     }
+         finally{
+            result.innerHTML = output;
+         }
 
-   }
+      }
