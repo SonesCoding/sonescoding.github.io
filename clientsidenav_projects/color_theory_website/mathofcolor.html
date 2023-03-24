@@ -32,10 +32,10 @@
 <label id="label"> Enter your color!</label><br>
 <p>Each value must be between 0-255 to be a valid color according to trichromatic theory</p><br>
 
-<form id="form" >  
+<form id="form" method="get" action="mathsim.html" >  
 
     <label for="NickN">Nickname:</label><br>
-    <input type="text" name="NickN"><br>
+    <input type="text" id="Nickn"name="NickN"><br>
 
     <br>
    
@@ -57,9 +57,7 @@
     
 
 
-    <input type="button"
-           onclick="message()"
-           value="Submit">
+    <input type="submit" id="submitButton" value="Submit" />
 </form> 
 
 
