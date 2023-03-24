@@ -3,16 +3,48 @@
    <title>YouAndComplimentaryColor</title>
 </head>
 
+<script>
+    window.addEventListener("load", function(){ 
+
+        //https://sonescoding.github.io/clientsidenav_projects/color_theory_website/mathsim.html?NickN=Eve&r=1&b=1&g=1
+
+        const kandv = window.location.search;
+        
+        const urlParams = new URLSearchParams(kandv);
+
+        let nickname= urlParams.get('NickN');
+        let color= urlParams.get('color');
+        
+        let r = urlParams.get('r');
+        let b = urlParams.get('b');
+        let g = urlParams.get('g');
+
+let selectElement = document.querySelector('#select1');
+
+
+   
+let cr = 255 - r;
+let cb = 255 - b;
+let cg = 255 - g;
+
+let cc =("("+cr + ", " + cb + ", " + cg+")");
+
+        document.getElementById("nickname").textContent = nickname;
+        document.getElementById("color").textContent = color;
+        document.getElementById("cc").textContent = cc;
+      });
+</script>
+
 <body>
 
       <h1>wow I cannot believe it,,, </h1>
-
 
         <p><span id="nickname"></span></p>&nbsp;
         <p>'s favorite color is </p>&nbsp;
         <p><span id = "color"></span></p>&nbsp;
         <br>
-        <p>Their complimentary color is</p>
+        <p>Their complimentary color is </p>&nbsp;
+        <p><span id = "cc"></span></p>&nbsp;
 </p>
 
 </body>
