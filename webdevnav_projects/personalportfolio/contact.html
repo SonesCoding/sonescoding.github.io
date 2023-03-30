@@ -13,8 +13,19 @@
 	</head>
 	<body>
 	
-			<header>
-			</header>
+		<header class="hgrid">
+			<figure class="portrait" id="portrait"><img src="images/sonesportrait.jpg" alt="It is a picture of me!" width="400" height="400">
+	<figcaption>howdy howdy</figcaption>
+			</figure>
+	
+			<article><h2>hydrate or diedrate</h2>
+				<section>
+					
+					<h3>It is very very very very important to stay hydrated and not die. Do not forget to drink water today :)</h3>
+				</section>
+			</article>
+	
+		</header>
 			
 			<div class="navbar"><nav>
 				<h1>Everett Sones Personal Portfolio</h1>
@@ -28,7 +39,7 @@
 			</nav></div>
 	
     <main>
-        <div class="contact">
+        <article class="contact">
             <h2>Feel free to contact me with any questions you might have! 
                 My availability is limited but I will get back to you as soon as I can!</h2>
 
@@ -42,7 +53,34 @@
         </ul>
 		<p>Maybe catch me around at my school campus during midterms.</p>
 
-        </div>
+	</article>
+
+	<form>
+	<fieldset>
+		<legend>OR Contact me Through my Page</legend>
+			  <p>I would like to send you a message! I am...</p>
+  
+	<label for="fname">First Name:</label>
+	<input type="text" id="fname" name="fname">
+  
+	  <label for="lname">Last Name:</label>
+	<input type="text" id="lname" name="lname">
+  
+	  <label for="student">Student</label>
+	<input type="radio" id="student" name="student" value="Student">
+  <br>
+	<label for="teacher">Teacher</label>
+	<input type="radio" id="teacher" name="teacher" value="Teacher">
+<br>
+	  <label for="other">Other</label>
+	<input type="radio" id="other" name="info" value="other">
+  <br>
+	  <label for="questions">What questions do you have?</label><br>
+	<textarea id="questions" name="questions" rows=5 cols=35></textarea>
+  
+	  </fieldset>
+  <input type="submit" id="submit" value="Submit" class="btn">
+			</form>
 	</main>
 	
 	<footer>

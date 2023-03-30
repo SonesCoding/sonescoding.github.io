@@ -7,7 +7,7 @@
 
 /*CSS RESET*/
 
-html, body, header, div, h1, h2, h3, h4, main, a, ul, li, footer, nav{
+html, body, header, div, h1, h2, h3, h4, main, a, ul, li, footer, nav, article, aside, section{
    margin: 0;
    padding: 0;
    border: 0;
@@ -108,11 +108,75 @@ main ul{
 /* should remain in general relative and compatible*/
 
 #portrait{
-    max-width: 60%;
-    align-self: center;
-    margin: 0% 20%;
-    padding: 5%;
+    max-width: 40%;
+    padding: 2%;
+    background-color: #c7bcb9;
+
 }
+
+#portrait figcaption{
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    color: #193318;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 10px;
+}
+
+.hgrid article{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #193318;
+    padding: 2%;
+    text-align: right;
+    margin: 1% 5% 1% 5%;
+}
+
+.favqgrid{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 20px 20px;
+    align-items: center;
+}
+
+.favqgrid section{
+    color:#947657;
+    box-shadow: 5px 5px 5px 5px #292321;
+    background-color: rgb(24, 51, 23, .3);
+    text-align: center;
+    margin: 2% 5% 2% 5%;
+}
+
+/* Style rules for table */
+
+.table{
+    border: 1px solid #795e43;
+    margin: 0 auto 0 auto;
+  }
+  
+  .table caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+  
+  th, td{
+    border: 1px solid #193318;
+    padding: 1%;
+  }
+  th{
+    background-color: #507250;
+    color: #193318;
+    font-size: 1.15em;
+  }
+  tr{
+    background-color: #795e43;
+  }
 
 #funfacts li{
     padding: 2%;
