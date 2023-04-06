@@ -16,6 +16,6 @@ function chunkValues() {
 
 
     if (selected.length > 0) {
-        alert("Selected values: " + selected.join(","));
+        alert("Thank you for filling out the form and leaving your thoughts! Look in the future for a FAQ page!");
     }
 };
