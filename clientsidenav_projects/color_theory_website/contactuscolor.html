@@ -3,6 +3,7 @@
 <head>
     <title>Contact Us</title>
     <meta charset="utf-8">
+    <script src="contact.js" defer></script>
 
 </head>
 <body>
@@ -22,8 +23,9 @@
         <p>3344 Saturation St., Mono AZ, 88990</p>
     </main>
 
+    <h2>Contact us through the site below!</h2>
     <div class="container">
-        <form action="messageSubmit.html">
+        <form>
       
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -31,19 +33,31 @@
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
       <br>
-          <label for="subject">Subject</label><br>
-          <select id="subject" name="subject">
-            <option value="Color Theory Pursuits">Color Theory Pursuits</option>
-            <option value="Personal">Personal</option>
-            <option value="Other">Other</option>
-          </select>
-      <br>
+      <p>Subject: </p>
+      <table id="tblSubjects">
+        <tr>
+            <td><input id="chkColor" type="checkbox" value="1"/><label for="chkColor">Color Theory Pursuits</label></td>
+        </tr>
+        <tr>
+            <td><input id="chkPersonal" type="checkbox" value="2"/><label for="chkPersonal">Personal</label></td>
+        </tr>
+        <tr>
+            <td><input id="chkBusiness" type="checkbox" value="3"/><label for="chkBusiness">Business</label></td>
+        </tr>
+        <tr>
+            <td><input id="chkCollege" type="checkbox" value="4"/><label for="chkCollege">College/School</label></td>
+        </tr>
+        <tr>
+            <td><input id="chkOther" type="checkbox" value="5"/><label for="chkOther">Other</label></td>
+        </tr>
+    </table>
+    <br />
       <br>
           <label for="message">Your Message...</label>
           <br>
           <textarea id="message" name="message" placeholder="Write something.."></textarea>
       
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" onclick = "chunkValues()">
           <p>If you would like, leave your email in the comment box.</p>
       
         </form>
