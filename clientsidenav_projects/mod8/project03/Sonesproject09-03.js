@@ -15,15 +15,11 @@
 let lastVisitDate = document.getElementById("lastVisitDate");
 let articleDates = document.getElementsByClassName("posttime");
 
-if(localStorage.getItem(sbloggerVisit))
-{
+if(localStorage.getItem(sbloggerVisit)){
       let storedLastDate = localStorage.getItem(sbloggerVisit);
       lastVisitDate.textContent = storedLastDate;
-
       let lastDate = new Date(storedLastDate);
-
       for(let x of articleDates){
-            
             let articleDate = new Date(x);
             if (articleDate>lastDate){
                   x.innerHTML += "<strong>new</strong>";
@@ -36,8 +32,5 @@ else{
                   x.innerHTML += "<strong>new</strong>";
       }
 }
-
 let currentDate = new Date("9/12/2024");
 localStorage.setItem(sbloggerVisit, currentDate.toLocaleDateString());
-
-

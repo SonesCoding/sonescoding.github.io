@@ -25,49 +25,20 @@
    </header>
 
    <section>
-      <h1>Shopping Cart</h1>
-      <table id="greeting">
-      <caption>Greeting Message</caption>         
-      <tr>
-         <th>To:</th>
-         <td id="to"></td>
-      </tr>
-      <tr>
-         <th>From:</th>
-         <td id="from"></td>
-      </tr> 
-      <tr>
-         <th>Message:</th>
-         <td id="msg"></td>
-      </tr>           
-      </table>
-      
-      <table id="order">
-         <thead>
-            <tr>
-               <th>Product</th>
-               <th>Qty</th>
-               <th>Cost</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>Classic Pears, Apples, and Cheese Box ($49.95)</td>
-               <td>1</td>
-               <td>$49.95</td>
-            </tr>
-            <tr>
-               <td>Signature Chocolate Truffles ($29.95)</td>
-               <td>2</td>
-               <td>$59.90</td>
-            </tr>            
-         </tbody>
-         <tfoot>
-            <td></td>
-            <td>TOTAL</td>
-            <td>$109.85</td>
-         </tfoot>
-      </table>
+      <h1>Personal Greeting</h1>
+      <form method="get" action="project09-01b.html">
+      <fieldset>
+         <legend>Enter your personal greeting</legend>
+         <label for="to">To:</label>
+         <input name="to" id="to" type="text" />
+         <label for="from">From:</label>
+         <input name="from" id="from" type="text" />
+         <label for="msg">Message:</label>
+         <textarea name="msg" id="msg"></textarea>
+      </fieldset>
+         
+      <input id="subButton" type="submit" value="SUBMIT" />
+      </form>
    </section>
 </body>
 </html>
