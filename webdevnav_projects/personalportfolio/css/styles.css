@@ -102,10 +102,19 @@ main ul{
 
 /*********************************************/
 
+/*********************************************/
+/*minimal icon styling.*/
+.logo{
+    background-color: transparent;
+    max-width: 15%;
+    padding: 5%;
+}
+/*********************************************/
 
 /*********************************************/
 /* weird lil things that have custom stuff*/
 /* should remain in general relative and compatible*/
+
 
 #portrait{
     max-width: 40%;
